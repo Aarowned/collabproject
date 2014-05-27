@@ -123,3 +123,12 @@ ul.panes > li > img {
     top: 0;
     margin: 0 auto;
 }
+
+
+.redborder {
+    box-shadow: inset 0 0 5px #ff0000;    
+}
+
+.panel {  
+    box-sizing: border-box;
+}
