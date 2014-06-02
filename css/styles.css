@@ -238,6 +238,49 @@ a.logo img {
     padding: 5px;
     font-size: 0.7em;
 }
+
+.row.contentbuttons .columns {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.row.contentbuttons .columns h1{
+        font-family: denseregular;
+        cursor: pointer;
+        width: 100%;
+        color: #f7f7f7;
+        text-transform: uppercase;
+        display: inline-block;
+        float: left;
+        font-size: 30px;
+        line-height: 35px;
+        padding: 5px 0;
+        margin: 0;
+    
+}
+
+.columns.watch h1, .columns.quiz h1 {
+    background-color: #b22222;    
+}
+
+.columns.listen h1 , .columns.profiles h1 {
+    background-color: #cc2c2c;    
+}
+
+.buttonicon {
+    display: inline-block;
+    margin-left: -25px;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.buttonicon img {
+    height: 30px;
+    width: 30px;  
+    margin: -11px auto 0 auto;
+}
  
 /* LARGE SCREENS */
 @media only screen and (min-width: 64.063em) {
@@ -251,9 +294,40 @@ a.logo img {
         margin: 0 0 200px;
         font-size: 4rem;
 }
+    
+    .row.contentbuttons .columns h1 {
+        font-size: 40px;
+        line-height: 39px;
+    }
+    
+    .buttonicon img {
+        margin: -15px auto 0 auto;    
+    }
+}
+
+#profiles .flavourtext p.stats {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-family: denseregular;    
+    color: #222222;
 }
 
 /* SMALL SCREENS */
 @media only screen and (min-width: 40em) {
     
+}
+
+
+/* DATING BANNER FIX */
+
+@media only screen and (max-width: 400px;) {
+    li.datingbanner h1{
+        font-size: 5.5rem !important;
+        line-height: 5rem;
+    }
+    
+    li.datingbanner h2 {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
 }
