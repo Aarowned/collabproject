@@ -1,18 +1,16 @@
-var options = $('[name="option"]');
+var options = $('[class="panel"]');
 var isrunning = false
 
 function pulse(){
-    console.log(options);
     var chosen = Math.floor(Math.random() * options.length );
-    console.log(chosen);
     
     options.addClass(function(index){
         if (index === chosen) {
-            return "redborder";    
+            return "selected";    
         }
         
     }).delay(300).queue(function(next){
-        options.removeClass("redborder");
+        options.removeClass("selected");
         next();
     });
 
@@ -30,9 +28,37 @@ loop();
 
 function togglerunning() {
     if (isrunning) {
-        isrunning = false;    
+        isrunning = false; 
+        chooseperson();
+        
+        
     } else {
         isrunning = true;
         loop();
     }
+}
+
+function go() {
+    togglerunning();
+    setTimeout(togglerunning, 3500);
+}
+
+
+function chooseperson() {
+    
+    var choice = $('#choicebox').val();
+      
+    if (choice != 0) {
+        console.log(choice);    
+    } else {
+        choice = Math.floor(Math.random() * 5 ) + 1;
+    }
+    
+    displayresult(choice);
+    
+}
+
+function displayresult(x) {
+    var modalname = "#modal_person" + x.toString(); 
+    $(modalname).foundation('reveal', 'open');
 }

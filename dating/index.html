@@ -148,14 +148,14 @@
       
       <!-- MODALS -->
       
-      <div id="profiles" class="reveal-modal xlarge" data-reveal>
+      <div id="profiles" class="reveal-modal xlarge profiles" data-reveal>
         <div class="flavourtext"><h1>SOME OF OUR CUSTOMERS</h1></div>
             <div class="wrapper dark">
                 <div class="row" data-equalizer>
                     <div class="small-12 medium-5 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/alf.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 columns bio" data-equalizer-watch>
                         <span class="flavalign"></span><div class="flavourtext">
                             <p class="stats">NAME: ALF <br> AGE: 75 <br> LIKES: Walks in the park. <br>  </p>
                         <p>
@@ -172,7 +172,7 @@
                     <div class="small-12 medium-5 medium-push-7 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/penny.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 medium-pull-5 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 medium-pull-5 columns bio" data-equalizer-watch>
                        <span class="flavalign"></span><div class="flavourtext">
                         <p class="stats">NAME: PENNY <br> AGE: 21 <br> LIKES: Finishing her sister's... <br>  </p>
                         <p>
@@ -189,7 +189,7 @@
                     <div class="small-12 medium-5 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/jenny.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 columns bio" data-equalizer-watch>
                         <span class="flavalign"></span><div class="flavourtext">
                             <p class="stats">NAME: JENNY <br> AGE: 21 <br> LIKES: ... sentences. <br>  </p>
                         <p>
@@ -208,7 +208,7 @@
                     <div class="small-12 medium-5 medium-push-7 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/yingping.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 medium-pull-5 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 medium-pull-5 columns bio" data-equalizer-watch>
                        <span class="flavalign"></span><div class="flavourtext">
                         <p class="stats">NAME: YING PING <br> AGE: 25 <br> LIKES: England. <br>  </p>
                         <p>
@@ -224,7 +224,7 @@
                     <div class="small-12 medium-5 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/dicky.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 columns bio" data-equalizer-watch>
                         <span class="flavalign"></span><div class="flavourtext">
                             <p class="stats">NAME: RICHARD 'DICKY' GRAY <br> AGE: 32 <br> LIKES: Romantic films, long walks, and cuddling. <br>  </p>
                         <p>
@@ -241,7 +241,7 @@
                     <div class="small-12 medium-5 medium-push-7 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/sisterconstance.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 medium-pull-5 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 medium-pull-5 columns bio" data-equalizer-watch>
                        <span class="flavalign"></span><div class="flavourtext">
                         <p class="stats">NAME: SISTER CONSTANCE CRAVING <br> AGE: 40 <br> LIKES: I assume nun-type things. <br>  </p>
                         <p>
@@ -257,7 +257,7 @@
                     <div class="small-12 medium-5 columns center" data-equalizer-watch>
                         <span class="flavalign"></span><img src="../img/portraits/nursecox.png" class="flavour">
                     </div>
-                    <div class="small-12 medium-7 columns" data-equalizer-watch>
+                    <div class="small-12 medium-7 columns bio" data-equalizer-watch>
                         <span class="flavalign"></span><div class="flavourtext">
                             <p class="stats">NAME: Nurse Cox <br> AGE: "CAN'T REMEMBER" <br> LIKES: Men. <br>  </p>
                         <p>
@@ -275,6 +275,206 @@
 </div>
       
       
+      <div id="quiz" class="reveal-modal xlarge" data-reveal>
+          
+          
+          <div class="row">
+            <div class="small-6 columns">
+                    <label>How old are you?</label><input type="number" name="age" min="18" max="120">
+            </div>
+               <div class="small-6 columns">
+                    <label>From 1 to 10, how adventurous are you?</label><input type="number" name="age" min="1" max="10">
+            </div>
+               <div class="small-6 columns">
+                    <label>1 to 10, how serious a relationship do you want?</label><input type="number" name="age" min="1" max="10">
+            </div> <div class="small-6 columns">
+                    <label>What's your perfect weekend?</label>
+                <select id="choicebox">
+                    <option value ="0">- SELECT AN OPTION -</option>
+                    <option value="1">Quiet night in, watching TV</option>
+                    <option value="2">Watch the boxing, have a cuddle</option>
+                    <option value="3">Skip church to meet new people</option>
+                    <option value="4">Getting married</option>
+                    <option value="5">Go to a club, have some fun</option>
+                    <option value="6">Never leave the bedroom</option>
+
+                </select>
+            </div>
+
+          
+          </div>
+          
+          <div class="row">
+            <div class="small-12 small-centered columns center">
+                <div class="button" onclick="go()">
+                    FIND YOUR MATCH
+                </div>
+              </div>
+          </div>
+          
+          
+          
+          <div class="row">
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            <div class="small-4 medium-2 columns">
+                <div class="panel"><img src="../img/icon_person.svg"></div>
+              </div>
+            </div>
+          
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      
+      
+      
+      
+      
+      <div id="modal_person1" class="reveal-modal xlarge profiles" data-reveal>
+          <div class="wrapper light">
+                <div class="row" data-equalizer>
+                    <div class="small-12 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/alf.png" class="flavour">
+                    </div>
+                    <div class="small-12 columns bio" data-equalizer-watch>
+                        <span class="flavalign"></span><div class="flavourtext">
+                            <p class="stats">NAME: ALF <br> AGE: 75 <br> LIKES: Walks in the park. <br>  </p>
+                        <p>
+                            Alf is apparently not looking for love. Instead, he says he just seeks companionship following the death of his wife. Don't ask him for a biscuit.
+                            
+                        </p>
+                            </div>
+                    </div>
+                </div>             
+            </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      
+      <div id="modal_person2" class="reveal-modal large profiles" data-reveal>
+           <div class="wrapper light">
+                <div class="row" data-equalizer>
+                    <div class="small-12 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/dicky.png" class="flavour">
+                    </div>
+                    <div class="small-12 columns bio" data-equalizer-watch>
+                        <span class="flavalign"></span><div class="flavourtext">
+                            <p class="stats">NAME: RICHARD 'DICKY' GRAY <br> AGE: 32 <br> LIKES: Romantic films, long walks, and cuddling. <br>  </p>
+                        <p>
+                           Dicky works on a building site, but is quick to add that he's not a typical 'tough guy'. He used to like football, but has now decided that boxing is much better.
+                            
+                        </p>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal_person3" class="reveal-modal large profiles" data-reveal>
+           <div class="wrapper light fullwidth">
+              <div class="row" data-equalizer>
+                    <div class="small-12 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/sisterconstance.png" class="flavour">
+                    </div>
+                    <div class="small-12 columns bio" data-equalizer-watch>
+                       <span class="flavalign"></span><div class="flavourtext">
+                        <p class="stats">NAME: SISTER CONSTANCE CRAVING <br> AGE: 40 <br> LIKES: I assume nun-type things. <br>  </p>
+                        <p>
+                           Sister Constance is, as her name would suggest, a nun at the local convent. We're not entirely sure what she's looking for, but she seems to enjoy herself.
+                            
+                        </p>
+                        </div></div>
+                    </div>
+                </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal_person4" class="reveal-modal large profiles" data-reveal>
+          <div class="wrapper light fullwidth">
+              <div class="row" data-equalizer>
+                    <div class="small-12 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/yingping.png" class="flavour">
+                    </div>
+                    <div class="small-12 columns bio" data-equalizer-watch>
+                       <span class="flavalign"></span><div class="flavourtext">
+                        <p class="stats">NAME: YING PING <br> AGE: 25 <br> LIKES: England. <br>  </p>
+                        <p>
+                           Ying Ping is a customer services agent for  telecommunications network. Talk to her for a minute, though, and she'll likely tell you all about her much different past in a blow-up doll factory. She informs us she makes a good, loyal wife.
+                            
+                        </p>
+                        </div></div>
+                    </div>
+                </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal_person5" class="reveal-modal large profiles" data-reveal>
+          <div class="wrapper light fullwidth">
+              <div class="row" data-equalizer>
+                    <div class="small-12 medium-5 medium-push-7 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/penny.png" class="flavour">
+                    </div>
+                    <div class="small-12 medium-7 medium-pull-5 columns bio" data-equalizer-watch>
+                       <span class="flavalign"></span><div class="flavourtext">
+                        <p class="stats">NAME: PENNY <br> AGE: 21 <br> LIKES: Finishing her sister's... <br>  </p>
+                        <p>
+                           Penny is a twin. You'd never believe it talking to her, but she is. She and her sister both regularly go speed-dating and, according to them, are twice as much fun as everyone else. Funny that.
+                            
+                        </p>
+                        
+                        </div></div>
+                    </div>
+                </div>
+          
+          <div class="wrapper dark">
+                <div class="row" data-equalizer>
+                    <div class="small-12 medium-5 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/jenny.png" class="flavour">
+                    </div>
+                    <div class="small-12 medium-7 columns bio" data-equalizer-watch>
+                        <span class="flavalign"></span><div class="flavourtext">
+                            <p class="stats">NAME: JENNY <br> AGE: 21 <br> LIKES: ... sentences. <br>  </p>
+                        <p>
+                           "Woah, wait, I've just seen that picture!" I hear you cry. Nope. That would be the twin thing. 
+                            
+                        </p>
+                        
+                        
+                        </div>
+                    </div>
+                </div>             
+            </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal_person6" class="reveal-modal large profiles" data-reveal>
+          <div class="wrapper light">
+                <div class="row" data-equalizer>
+                    <div class="small-12 columns center" data-equalizer-watch>
+                        <span class="flavalign"></span><img src="../img/portraits/nursecox.png" class="flavour">
+                    </div>
+                    <div class="small-12 columns bio" data-equalizer-watch>
+                        <span class="flavalign"></span><div class="flavourtext">
+                            <p class="stats">NAME: Nurse Cox <br> AGE: "CAN'T REMEMBER" <br> LIKES: Men. <br>  </p>
+                        <p>
+                           Nurse Cox, whom we were unable to get a name other than 'Nurse' from, works at the sexual health clinic. She's not looking for anything serious, and it's probably a safe bet that she can get free condoms. So that's a bonus, right?
+                            
+                        </p>
+                        
+                        </div>
+                    </div>
+                </div>             
+            </div>
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
       
       <!--     -------------------------      -->
       
@@ -283,8 +483,9 @@
       
       
       
-      
+     
     <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/quiz.js"></script>
     <script src="../js/foundation.min.js"></script>
     <script>
       $(document).foundation();
