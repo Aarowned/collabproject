@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512.7 312.7" enable-background="new 0 0 512.7 312.7" xml:space="preserve">
+<g id="Layer_1">
+	<ellipse fill="#534741" stroke="#534741" stroke-miterlimit="10" cx="255.7" cy="157.2" rx="250" ry="150"/>
+	<path opacity="0.5" fill="#B22222" stroke="#534741" stroke-width="4" stroke-miterlimit="10" d="M255.7,7.2
+		c-138.1,0-250,67.2-250,150s111.9,150,250,150s250-67.2,250-150S393.7,7.2,255.7,7.2z M255.7,297.2c-132.5,0-240-62.7-240-140
+		s107.5-140,240-140s240,62.7,240,140S388.2,297.2,255.7,297.2z"/>
+	<ellipse fill="none" stroke="#534741" stroke-width="4" stroke-miterlimit="10" cx="255.7" cy="157.2" rx="250" ry="150"/>
+</g>
+<g id="Layer_2">
+	<g>
+		<text transform="matrix(1 0 0 1 62.8091 210.4267)" font-family="'Dense-Regular'" font-size="162">HOT SPOT</text>
+		<text transform="matrix(1 0 0 1 62.8091 210.4267)" fill="#C7B299" font-family="'Dense-Regular'" font-size="162">HOT SPOT</text>
+	</g>
+</g>
+<g id="Layer_3">
+	<g>
+		<text transform="matrix(1 0 0 1 233.7124 60.4897)" font-family="'Dense-Regular'" font-size="19">EST. 2014</text>
+		<text transform="matrix(1 0 0 1 233.7124 60.4897)" fill="#736357" font-family="'Dense-Regular'" font-size="19">EST. 2014</text>
+	</g>
+</g>
+<g id="Layer_4">
+	<g>
+		<g>
+			<path fill="#736357" stroke="#998675" stroke-miterlimit="10" d="M255.7,40.5c62.4,0,119.2,11.3,162.2,29.9
+				C378,43.7,320.1,26.9,255.7,26.9S133.3,43.7,93.5,70.5C136.5,51.9,193.3,40.5,255.7,40.5z"/>
+			<path fill="#736357" stroke="#998675" stroke-miterlimit="10" d="M255.7,273.8c-62.4,0-119.2-11.3-162.2-29.9
+				c39.8,26.8,97.7,43.6,162.2,43.6s122.4-16.9,162.2-43.6C374.9,262.5,318,273.8,255.7,273.8z"/>
+		</g>
+		<g>
+			<path fill="#C7B299" d="M255.7,40.5c62.4,0,119.2,11.3,162.2,29.9C378,43.7,320.1,26.9,255.7,26.9S133.3,43.7,93.5,70.5
+				C136.5,51.9,193.3,40.5,255.7,40.5z"/>
+			<path fill="#C7B299" d="M255.7,273.8c-62.4,0-119.2-11.3-162.2-29.9c39.8,26.8,97.7,43.6,162.2,43.6s122.4-16.9,162.2-43.6
+				C374.9,262.5,318,273.8,255.7,273.8z"/>
+		</g>
+	</g>
+</g>
+</svg>

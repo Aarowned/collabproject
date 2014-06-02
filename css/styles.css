@@ -1,5 +1,6 @@
-body {
+html, body {
     min-height: 100%; 
+    overflow: auto;
 }
 
 .main {
@@ -10,7 +11,7 @@ body {
 }
 
 .wrapper {
-    padding: 15px 0;    
+    padding: 15px 5%;    
 }
 
 .red {
@@ -32,45 +33,17 @@ body {
    margin-right: auto;
 }
 
-.wrapper.light {
+.light {
     background-color: #f7f7f7;
 }
 
-.wrapper.dark {
+.dark {
     background-color: #e2e2e2;    
 }
 
 .foldcontainer {
-    background: #f7f7f7;
-    overflow: hidden; 
+    background: #f7f7f7; 
 }
-
-'.foldcontainer:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-width: 0 150px 150px 0;
-    border-style: solid;
-    border-color: rgba(0,0,0,0) rgba(0,0,0,0) #cbcbcb #cbcbcb;
-    background: #e0e0e0;
-    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
-    /* Firefox 3.0 damage limitation */
-    display: block; width: 0;
-    margin: 0;
-    z-index: 9;
-}
-
-img#teaser {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
-        
-}
-
 
 .mainslider {
     min-height: 400px;    
@@ -106,6 +79,7 @@ img#teaser {
 
 ul.panes >li {
     background-size: cover;
+    background-position: center;
     position:relative;
     float:left;
     width:25%; /* 100 / number of panes */
@@ -113,8 +87,31 @@ ul.panes >li {
         margin: 0;
         right: 0%;
     overflow: hidden;
+    text-align: center;
+    color: #f7f7f7
 }
 
+ul.panes li h1 {
+    margin-top: 150px;
+    font-family: denseregular;
+    color: #f7f7f7;
+    font-size: 7rem;
+}
+
+ul.panes li h2 {
+    margin: 0 0 100px;
+    color: #f7f7f7;   
+    font-family: "biro_script";
+    font-size: 3rem;
+}
+
+ul.panes li.homebanner {
+    background-image: url(../img/hotspotbanner_notext.png);
+}
+
+ul.panes li.datingbanner {
+    background-image: url(../img/datingbanner_notext.png);
+}
 
 ul.panes > li > img {
     height: 100%;
@@ -131,4 +128,132 @@ ul.panes > li > img {
 
 .panel {  
     box-sizing: border-box;
+}
+
+.flavour {
+    max-width: 350px;
+    width: 90%;
+    margin: 5% auto;  
+    vertical-align: middle;
+}
+
+.flavalign {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;     
+}
+
+.center {
+    text-align: center;    
+}
+
+
+.headerwrapper {
+    margin-top: 15px;
+    height: 70px;
+    width: 100%;
+    z-index: 10;
+    font-family: "denseregular";
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(25, 25, 25, 0.25);
+    overflow: hidden;
+}
+
+.header {
+    width: 1500px;
+    margin: 0 auto;
+    height: 70px;
+}
+
+.header ul {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style-type: none;
+    display: block;
+    padding-right: 30px;
+}
+
+.header ul li {
+    float: left;
+    display: block;
+    margin: 0;
+    height: 70px;
+}
+
+.header ul li a, ul.off-canvas-list li a {
+    color: #f7f7f7;   
+    height: 70px;
+    display: block;
+    padding: 15px;
+    'border: 1px solid red;
+    transition: background-color 0.2s;
+    font-family: denseregular;
+    font-size: 40px;
+    line-height: 39px;
+}
+
+.header ul li a:hover, ul.off-canvas-list li a:hover {
+    background-color: rgba(178, 34, 34, 0.75);    
+}
+a.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    margin: 5px 0 0 5px;    
+}
+
+a.logo img {
+    height: 90px;    
+}
+
+.flavourtext {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+}
+
+.flavourtext h1 {
+    font-family: denseregular;  
+    font-size: 4em;
+}
+
+.menu-icon {
+    padding: 0;    
+}
+.menu-icon svg {
+    margin: 0 auto;   
+}
+
+.footer {
+    background-color: #888;
+    color: #f7f7f7;
+    font-family: sans-serif;
+    padding: 5px;
+    font-size: 0.7em;
+}
+ 
+/* LARGE SCREENS */
+@media only screen and (min-width: 64.063em) {
+    
+    ul.panes li h1 {
+        margin-top: 120px;
+        font-size: 10rem;
+}
+
+    ul.panes li h2 {
+        margin: 0 0 200px;
+        font-size: 4rem;
+}
+}
+
+/* SMALL SCREENS */
+@media only screen and (min-width: 40em) {
+    
 }
