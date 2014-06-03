@@ -289,6 +289,10 @@ a.logo img {
     color: #222222;
 }
 
+.profiles img.flavour {
+    max-height: 415px;    
+}
+
 #quiz .row {
     max-width: 700px;    
 }

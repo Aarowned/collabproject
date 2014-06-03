@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css" /> 
     <link rel="stylesheet" type="text/css" href="../css/webfonts/denseregular/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="../css/webfonts/biro_script/stylesheet.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <script src="../js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -40,7 +41,7 @@
         
             <aside class="right-off-canvas-menu">
               <ul class="off-canvas-list">
-                <li><a href="#">HOME</a></li>
+                <li><a href="../">HOME</a></li>
                 <li><a href="#">DATING</a></li>
                 <li><a href="#">ABOUT</a></li>
               </ul>
@@ -255,7 +256,7 @@
            <div class="wrapper dark">
                 <div class="row" data-equalizer>
                     <div class="small-12 medium-5 columns center" data-equalizer-watch>
-                        <span class="flavalign"></span><img src="../img/portraits/nursecox.png" class="flavour">
+                        <span class="flavalign"></span><img src="../img/portraits/nursecox.png" class="flavour nurse">
                     </div>
                     <div class="small-12 medium-7 columns bio" data-equalizer-watch>
                         <span class="flavalign"></span><div class="flavourtext">
@@ -488,7 +489,11 @@
     <script src="../js/quiz.js"></script>
     <script src="../js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+        $(document).on('opened', '[data-reveal]', function () {
+        setTimeout(function() {Foundation.libs.equalizer.reflow();}, 10);
+        
+});
+        $(document).foundation();
     </script>
   </body>
 </html>
