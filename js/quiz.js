@@ -49,7 +49,7 @@ function chooseperson() {
     var choice = $('#choicebox').val();
       
     if (choice != 0) {
-        console.log(choice);    
+        //console.log(choice);    
     } else {
         choice = Math.floor(Math.random() * 5 ) + 1;
     }
@@ -59,6 +59,8 @@ function chooseperson() {
 }
 
 function displayresult(x) {
-    var modalname = "#modal_person" + x.toString(); 
-    $(modalname).foundation('reveal', 'open');
+    var modalname = "#modal_person" + x.toString();
+    console.log(modalname);
+    $(modalname).foundation('reveal','open');     
+        
 }

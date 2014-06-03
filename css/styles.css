@@ -1,6 +1,5 @@
 html, body {
     min-height: 100%; 
-    overflow: auto;
 }
 
 .main {
@@ -28,9 +27,8 @@ html, body {
 
 
 .wrapper, .fullwidth {
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
+   min-width: 100%;
+   margin: 0;
 }
 
 .light {
@@ -45,80 +43,54 @@ html, body {
     background: #f7f7f7; 
 }
 
-.mainslider {
-    min-height: 400px;    
+.clear {
+    clear: both;
 }
 
-.carousel{
-    overflow:hidden;
-    width:100%;
-    height: 500px;
-        margin: 0;
-        padding: 0;
-        
-}
 
 .panes{
-    list-style:none;
-    position:relative;
-    'width: 400%; /* Number of panes * 100% */
-    height: 100%;
-    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
-        
-    -moz-animation:carousel 30s infinite;
-    -webkit-animation:carousel 30s infinite;
-    animation:carousel 30s infinite;
-        -webkit-transition: right 1s;
-        -moz-transition: right 1s;
-        transition: right 1s;
-    'right: 0%;
     margin: 0;
+    position: relative;
+    min-width: 100%;
+    min-height: 500px;
     padding: 0;
 }
 
 
-ul.panes >li {
+.panes > div {
     background-size: cover;
     background-position: center;
-    position:relative;
-    float:left;
-    width:25%; /* 100 / number of panes */
-    height: 100%;
-        margin: 0;
-        right: 0%;
-    overflow: hidden;
+    position: relative;
+    float: left;
+    top: 0;
+    width: 100%;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
     text-align: center;
     color: #f7f7f7
 }
 
-ul.panes li h1 {
+.panes div h1 {
     margin-top: 150px;
     font-family: denseregular;
     color: #f7f7f7;
     font-size: 7rem;
 }
 
-ul.panes li h2 {
-    margin: 0 0 100px;
+.panes div h2 {
+    margin: 0 0 90px;
     color: #f7f7f7;   
     font-family: "biro_script";
     font-size: 3rem;
 }
 
-ul.panes li.homebanner {
+.panes .homebanner {
     background-image: url(../img/hotspotbanner_notext.png);
 }
 
-ul.panes li.datingbanner {
+.panes .datingbanner {
     background-image: url(../img/datingbanner_notext.png);
-}
-
-ul.panes > li > img {
-    height: 100%;
-    min-width: 1920px;
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
 }
 
 
@@ -317,17 +289,35 @@ a.logo img {
 #quiz .button:hover {
     background-color: #b22222;  
 }
+
+.modalclose{
+    font-size: 2.5rem;
+    line-height: 1;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.6875rem;
+    color: #aaaaaa;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+#datingvideo video {
+    width: 100%;
+    max-height: 720px;
+    box-sizing: border-box;    
+    position: relative;
+    margin: 0 auto;
+}
  
 /* LARGE SCREENS */
 @media only screen and (min-width: 64.063em) {
     
-    ul.panes li h1 {
+    .panes div h1 {
         margin-top: 120px;
         font-size: 10rem;
 }
 
-    ul.panes li h2 {
-        margin: 0 0 200px;
+    .panes div h2 {
         font-size: 4rem;
 }
     
@@ -351,12 +341,12 @@ a.logo img {
 /* DATING BANNER FIX */
 
 @media only screen and (max-width: 400px;) {
-    li.datingbanner h1{
+    .datingbanner h1{
         font-size: 5.5rem !important;
         line-height: 5rem;
     }
     
-    li.datingbanner h2 {
+    .datingbanner h2 {
         font-size: 3rem;
         margin-top: 30px;
     }

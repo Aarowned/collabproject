@@ -26,7 +26,6 @@
                     <ul class="nav">
                         <li><a class="hide-for-small-only" href="../">Home</a></li>
                         <li><a class="hide-for-small-only" href="#">Dating</a></li>
-                        <li><a class="hide-for-small-only" href="#">About</a></li>
                         <li><a class="right-off-canvas-toggle menu-icon show-for-small-only" href="#"><svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="10 5 40 40" enable-background="new 0 0 70 40" xml:space="preserve">
 			<path fill="#FFFFFF" d="M42.417,15.996H17.542c-1.104,0-2-0.896-2-2s0.896-2,2-2h24.875c1.104,0,2,0.896,2,2
 				S43.521,15.996,42.417,15.996z"></path>
@@ -43,7 +42,6 @@
               <ul class="off-canvas-list">
                 <li><a href="../">HOME</a></li>
                 <li><a href="#">DATING</a></li>
-                <li><a href="#">ABOUT</a></li>
               </ul>
             </aside>
         
@@ -51,35 +49,19 @@
               <div class="main foldcontainer">
           
           <div class="fullwidth">
-            <div class="fullwidth">
-                <div class="carousel fullwidth">
 
-                  <ul class="panes" id="panes" style="right: 00%; width: 400%;">
+                  <div class="panes">
                 
-                    <li class="datingbanner">
+                    <div class="datingbanner">
                         <h1> SPEED DATING </h1>
                         <h2> Find that special someone. </h2>
-                    </li>
-                
-                    <li class="two">
-                      <h2>02</h2>
-                        <img src="../img/homeslide2.png">
-                    </li>
-                
-                    <li class="three">
-                      <h2>03</h2>
-                        <img src="../img/homeslide3.png">
-                    </li>
-                
-                    <li class="four">
-                      <h2>04</h2>
-                        <img src="../img/homeslide4.png">
-                    </li>
-                
-                  </ul>
-                
+                    </div>
+                    <br class="clear" />
                 </div>
-              </div>
+                  
+                
+                
+              
           </div>
           <!-- <div class="row">
           <div class="small-12 columns">
@@ -213,7 +195,7 @@
                        <span class="flavalign"></span><div class="flavourtext">
                         <p class="stats">NAME: YING PING <br> AGE: 25 <br> LIKES: England. <br>  </p>
                         <p>
-                           Ying Ping is a customer services agent for  telecommunications network. Talk to her for a minute, though, and she'll likely tell you all about her much different past in a blow-up doll factory. She informs us she makes a good, loyal wife.
+                           Ying Ping is a customer services agent for a telecommunications network. Talk to her for a minute, though, and she'll likely tell you all about her much different past in a blow-up doll factory. She informs us she makes a good, loyal wife.
                             
                         </p>
                         </div></div>
@@ -280,6 +262,10 @@
           
           
           <div class="row">
+            <div class="small-12 columns flavourtext">
+                <h1>Find your soulmate!</h1>
+                <p>Which of our speed-daters are you most suited to? Are any of them your kindred spirit? Find out with just a few simple questions!</p>
+              </div>  
             <div class="small-6 columns">
                     <label>How old are you?</label><input type="number" name="age" min="18" max="120">
             </div>
@@ -400,6 +386,7 @@
                 </div>
           <a class="close-reveal-modal">&#215;</a>
       </div>
+      
       <div id="modal_person4" class="reveal-modal large profiles" data-reveal>
           <div class="wrapper light fullwidth">
               <div class="row" data-equalizer>
@@ -410,7 +397,7 @@
                        <span class="flavalign"></span><div class="flavourtext">
                         <p class="stats">NAME: YING PING <br> AGE: 25 <br> LIKES: England. <br>  </p>
                         <p>
-                           Ying Ping is a customer services agent for  telecommunications network. Talk to her for a minute, though, and she'll likely tell you all about her much different past in a blow-up doll factory. She informs us she makes a good, loyal wife.
+                           Ying Ping is a customer services agent for  a telecommunications network. Talk to her for a minute, though, and she'll likely tell you all about her much different past in a blow-up doll factory. She informs us she makes a good, loyal wife.
                             
                         </p>
                         </div></div>
@@ -456,6 +443,7 @@
             </div>
           <a class="close-reveal-modal">&#215;</a>
       </div>
+      
       <div id="modal_person6" class="reveal-modal large profiles" data-reveal>
           <div class="wrapper light">
                 <div class="row" data-equalizer>
@@ -477,6 +465,21 @@
           <a class="close-reveal-modal">&#215;</a>
       </div>
       
+      <div id="video" class="reveal-modal xlarge" data-reveal>
+                  <div id="datingvideo">
+                    <video controls>
+                        <source src="../videos/sample.mp4" type='video/mp4'>
+                        <source src="../videos/sample.webm" type='video/webm'>
+                        <source src="../videos/sample.ogv" type='video/ogg'>
+                        
+                        <!-- fallback -->
+                        <p>Sorry, your browser does not support video playback.</p>
+                        <p><a href="../videos/sample.mp4">You can download the file here.</a></p>
+                    </video>
+                </div>  
+          <a class="close-reveal-modal">&#215;</a>
+      </div>
+      
       <!--     -------------------------      -->
       
       
@@ -487,12 +490,18 @@
      
     <script src="../js/vendor/jquery.js"></script>
     <script src="../js/quiz.js"></script>
-    <script src="../js/foundation.min.js"></script>
+    <!-- <script src="../js/foundation.min.js"></script> -->
+      <script src="../js/foundation/foundation.js"></script>
+      <script src="../js/foundation/foundation.equalizer.js"></script>
+      <script src="../js/foundation/foundation.offcanvas.js"></script>
+      <script src="../js/foundation/foundation.reveal.js"></script>
+      <script src="../js/foundation/foundation.topbar.js"></script>
     <script>
         $(document).on('opened', '[data-reveal]', function () {
         setTimeout(function() {Foundation.libs.equalizer.reflow();}, 10);
         
 });
+        
         $(document).foundation();
     </script>
   </body>

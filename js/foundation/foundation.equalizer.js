@@ -27,8 +27,12 @@
     equalize: function(equalizer) {
       var isStacked = false,
           vals = equalizer.find('[' + this.attr_name() + '-watch]:visible'),
-          firstTopOffset = vals.first().offset().top,
           settings = equalizer.data(this.attr_name(true)+'-init');
+        
+        if (vals.first().length) {
+            var firstTopOffset = vals.first().offset().top;
+        }
+            
 
       if (vals.length === 0) return;
       settings.before_height_change();
