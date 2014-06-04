@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
       <meta property="og:image" content="http://abaker.co/collab/img/blank.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotspot - Dating</title>
+    <title>Hot Spot - Dating</title>
     <link rel="stylesheet" href="../css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="../css/styles.css" /> 
     <link rel="stylesheet" type="text/css" href="../css/webfonts/denseregular/stylesheet.css">
@@ -18,7 +18,7 @@
       
       <div class="off-canvas-wrap" data-offcanvas>
           <div class="inner-wrap">
-                <a href="#" class="logo">
+                <a href="../" class="logo">
                 <img src="../img/header-brown-png.png">
                 </a>
               <div class="headerwrapper">
@@ -26,6 +26,7 @@
                     <ul class="nav">
                         <li><a class="hide-for-small-only" href="../">Home</a></li>
                         <li><a class="hide-for-small-only" href="#">Dating</a></li>
+                        <li><a class="hide-for-small-only" href="../behindthescenes/">Behind the scenes</a></li>
                         <li><a class="right-off-canvas-toggle menu-icon show-for-small-only" href="#"><svg version="1.1" id="mobileMenuButton" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="10 5 40 40" enable-background="new 0 0 70 40" xml:space="preserve">
 			<path fill="#FFFFFF" d="M42.417,15.996H17.542c-1.104,0-2-0.896-2-2s0.896-2,2-2h24.875c1.104,0,2,0.896,2,2
 				S43.521,15.996,42.417,15.996z"></path>
@@ -42,6 +43,7 @@
               <ul class="off-canvas-list">
                 <li><a href="../">HOME</a></li>
                 <li><a href="#">DATING</a></li>
+                <li><a href="../behindthescenes/">BEHIND THE SCENES</a></li>
               </ul>
             </aside>
         
@@ -466,18 +468,41 @@
       </div>
       
       <div id="video" class="reveal-modal xlarge" data-reveal>
-                  <div id="datingvideo">
-                    <video controls>
-                        <source src="../videos/sample.mp4" type='video/mp4'>
-                        <source src="../videos/sample.webm" type='video/webm'>
-                        <source src="../videos/sample.ogv" type='video/ogg'>
+          <div class="flavourtext">
+            <h1>Episode 1: Alf</h1>
+          </div>
+                  <div id="datingvideo center">
+                    <video controls poster="../img/alfposter.png">
+                        <source src="../videos/hotspot.webm" type='video/webm'>
+                        <source src="../videos/hotspot.mp4" type='video/mp4'>
+                        <source src="../videos/hotspot.ogv" type='video/ogg'>
                         
                         <!-- fallback -->
                         <p>Sorry, your browser does not support video playback.</p>
-                        <p><a href="../videos/sample.mp4">You can download the file here.</a></p>
+                        <p><a href="../videos/hotspot.mp4">You can download the file here.</a></p>
                     </video>
                 </div>  
           <a class="close-reveal-modal">&#215;</a>
+      </div>
+      
+      <div id="audio" class="reveal-modal" data-reveal>
+        <div class="row">
+            <div class="small-12 columns flavourtext">
+                <h1>Audio Profiles</h1>
+                <p> A few of our customers have taken the time to talk to us about themselves. Who are they? What makes them tick? Find out here!</p>
+            </div>
+            <div class="small-12 columns">
+                <audio controls>
+                    <source src="../audio/hotspotaudio.mp3" type="audio/mpeg">
+                    <source src="../audio/hotspotaudio.ogg" type="audio/ogg">
+                    <p>Sorry, your browser does not support audio playback.</p>
+                    <p><a href="../audio/hotspotaudio.mp3">You can download the file here.</a></p>
+                </audio>
+            </div>  
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        
+      
       </div>
       
       <!--     -------------------------      -->
